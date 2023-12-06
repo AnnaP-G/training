@@ -110,76 +110,76 @@
 // console.log(book);
 
 // =========== task - 1 ================
-function isEnoughCapacity(products, containerSize) {
-  let totalProducts = 0;
-  for (let product in products) {
-    totalProducts += products[product];
-    }
-    return totalProducts <= containerSize;
-}
-console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8));
-console.log(isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12));
-console.log(isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 }, 14));
-console.log(isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 }, 7));
+// function isEnoughCapacity(products, containerSize) {
+//   let totalProducts = 0;
+//   for (let product in products) {
+//     totalProducts += products[product];
+//     }
+//     return totalProducts <= containerSize;
+// }
+// console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8));
+// console.log(isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12));
+// console.log(isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 }, 14));
+// console.log(isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 }, 7));
 
-// ============= task - 2 ================
+// // ============= task - 2 ================
 
-function calcAverageCalories(days) {
-  let totalCalories = 0;
-  if (days.length === 0) {
-    return 0;
-  }
-  for (let i = 0; i < days.length; i++) {
-    totalCalories += days[i].calories;
-  }
-  return totalCalories / days.length;
-}
+// function calcAverageCalories(days) {
+//   let totalCalories = 0;
+//   if (days.length === 0) {
+//     return 0;
+//   }
+//   for (let i = 0; i < days.length; i++) {
+//     totalCalories += days[i].calories;
+//   }
+//   return totalCalories / days.length;
+// }
 
-console.log(calcAverageCalories([
-    { day: "monday", calories: 3010 },
-    { day: "tuesday", calories: 3200 },
-    { day: "wednesday", calories: 3120 },
-    { day: "thursday", calories: 2900 },
-    { day: "friday", calories: 3450 },
-    { day: "saturday", calories: 3280 },
-    { day: "sunday", calories: 3300 }
-  ])
-);
+// console.log(calcAverageCalories([
+//     { day: "monday", calories: 3010 },
+//     { day: "tuesday", calories: 3200 },
+//     { day: "wednesday", calories: 3120 },
+//     { day: "thursday", calories: 2900 },
+//     { day: "friday", calories: 3450 },
+//     { day: "saturday", calories: 3280 },
+//     { day: "sunday", calories: 3300 }
+//   ])
+// );
 
-console.log(calcAverageCalories([
-    { day: "monday", calories: 2040 },
-    { day: "tuesday", calories: 2270 },
-    { day: "wednesday", calories: 2420 },
-    { day: "thursday", calories: 1900 },
-    { day: "friday", calories: 2370 },
-    { day: "saturday", calories: 2280 },
-    { day: "sunday", calories: 2610 }
-  ])
-);
+// console.log(calcAverageCalories([
+//     { day: "monday", calories: 2040 },
+//     { day: "tuesday", calories: 2270 },
+//     { day: "wednesday", calories: 2420 },
+//     { day: "thursday", calories: 1900 },
+//     { day: "friday", calories: 2370 },
+//     { day: "saturday", calories: 2280 },
+//     { day: "sunday", calories: 2610 }
+//   ])
+// );
 
-console.log(calcAverageCalories([]));
+// console.log(calcAverageCalories([]));
 
 
-// =========== task - 3 ================
+// // =========== task - 3 ================
 
-const profile = {
-  username: "Jacob",
-  playTime: 300,
-  changeUsername: function(newName) {
-    this.username = newName;
-  },
-  updatePlayTime: function(hours) {
-    this.playTime += hours;
-  },
-  getInfo: function() {
-    return `${this.username} has ${this.playTime} active hours!`;
-  }
-};
+// const profile = {
+//   username: "Jacob",
+//   playTime: 300,
+//   changeUsername: function(newName) {
+//     this.username = newName;
+//   },
+//   updatePlayTime: function(hours) {
+//     this.playTime += hours;
+//   },
+//   getInfo: function() {
+//     return `${this.username} has ${this.playTime} active hours!`;
+//   }
+// };
 
-console.log(profile.getInfo());
+// console.log(profile.getInfo());
 
-profile.changeUsername("Marco");
-console.log(profile.getInfo());
+// profile.changeUsername("Marco");
+// console.log(profile.getInfo());
 
-profile.updatePlayTime(20);
-console.log(profile.getInfo());
+// profile.updatePlayTime(20);
+// console.log(profile.getInfo());
